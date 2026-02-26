@@ -40,12 +40,12 @@ ALAHKYH""".replace('\n', '')
 human_ins_prot = """MALWMRLLPLLALLALWGPDPAAAFVNQHLCGSHLVEALYLVCGERGFFYTPKTRREAEDLQVGQVELGG
 GPGAGSLQPLALEGSLQKRGIVEQCCTSICSLYQLENYCN""".replace('\n', '')
 
+aligner = Align.PairwiseAligner()
+
 """Task 1 is to align human and rat HBB RNA sequences.
 
 1st case: match = 1; mismatch = 0; gap = 0.
 """
-
-aligner = Align.PairwiseAligner()
 
 aligner.match_score = 1
 aligner.mismatch_score = 0
