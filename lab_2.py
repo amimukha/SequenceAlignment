@@ -11,6 +11,8 @@ Original file is located at
 
 from Bio import Align
 
+from matplotlib import pyplot as plt
+
 human_hbb_rna = """ACATTTGCTTCTGACACAACTGTGTTCACTAGCAACCTCAAACAGACACCATGGTGCATCTGACTCCTGA
 GGAGAAGTCTGCCGTTACTGCCCTGTGGGGCAAGGTGAACGTGGATGAAGTTGGTGGTGAGGCCCTGGGC
 AGGCTGCTGGTGGTCTACCCTTGGACCCAGAGGTTCTTTGAGTCCTTTGGGGATCTGTCCACTCCTGATG
@@ -88,7 +90,6 @@ print(alignments21[0])
 matrix = alignments21[0].substitutions
 matrix
 
-from matplotlib import pyplot as plt
 plt.imshow(matrix)
 plt.colorbar()
 
