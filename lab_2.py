@@ -73,6 +73,9 @@ aligner.gap_score = 0
 alignments13 = aligner.align(human_hbb_rna, rat_hbb_rna)
 len(alignments13)
 
+print(alignments13[0])
+alignments13[0].substitutions
+
 """Task 2 is to align human and rat HBB protein sequences."""
 
 blosum62 = Align.substitution_matrices.load("BLOSUM62")
